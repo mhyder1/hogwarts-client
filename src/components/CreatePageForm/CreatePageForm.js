@@ -1,6 +1,7 @@
 import React from "react"
 import AppContext from "../../contexts/context"
 
+
 export default class CreatePageForm extends React.Component {
   state = {
     pronouns: "",
@@ -16,11 +17,11 @@ export default class CreatePageForm extends React.Component {
     event.preventDefault()
     const { pronouns, pet, wandType, wandCore, favoriteSubject } = this.state
     const newStudent = {
-        pronouns, 
-        pet, 
-        wandType, 
-        wandCore, 
-        favoriteSubject
+      pronouns,
+      pet,
+      wandType,
+      wandCore,
+      favoriteSubject,
     }
     this.context.addStudent(newStudent)
     // call to database
@@ -32,7 +33,7 @@ export default class CreatePageForm extends React.Component {
   }
 
   render() {
-      console.log(this.context)
+    console.log(this.context)
     return (
       <form onSubmit={this.handleSubmit}>
         <label>

@@ -7,7 +7,7 @@ import CreatePage from '../routes/CreatePage/CreatePage.js'
 import MyStudentsPage from '../routes/MyStudentsPage/MyStudentsPage.js'
 import SignUpPage from '../routes/SignUpPage/SignUpPage.js'
 import AppContext from '../contexts/context'
-
+import GetSortedPage from '../routes/GetSortedPage/GetSortedPage'
 
 
 class App extends Component {
@@ -25,7 +25,8 @@ class App extends Component {
     const value = {
       students: this.state.students, 
       addStudent: this.addStudent,
-      removeStudent: this.removeStudent
+      removeStudent: this.removeStudent,
+      randomizeHouse: this.randomizeHouse
     }
     return (
       <AppContext.Provider value={value}>
@@ -36,6 +37,7 @@ class App extends Component {
         <Route path = '/create-student' component ={CreatePage}/>
         <Route path = '/my-students' component ={MyStudentsPage}/>
         <Route path = '/signup' component ={SignUpPage}/>
+        <Route path = '/sorting' component ={GetSortedPage}/>
         </Switch>
       </div>
       </AppContext.Provider>
