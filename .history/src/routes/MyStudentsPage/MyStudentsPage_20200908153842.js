@@ -16,11 +16,11 @@ export default class MyStudentsPage extends React.Component {
         <section id="students">
           {this.context.students.map((student, index) => (
             <section id="student-one">
-              {/* <p>Student {index + 1}:</p> */}
+              <p>Student {index + 1}:</p>
               <p>
                 Student {index + 1} belongs to the {student.house} House. Their
                 pet is an {student.pet}, and their favorite subject is{" "}
-                {student.favoritesubject}.
+                {student.favoriteSubject}.
               </p>
             </section>
           ))}

@@ -36,11 +36,7 @@ export default class CreatePageForm extends React.Component {
 				return res.json().then(e => Promise.reject(e))
 			return res.json()
 		})
-		.then(student => {
-      this.context.addStudent(student)
-      // this.props.history.push('/my-students')
-      this.props.goTo()
-    })
+		.then(student => this.context.addStudent(student))
 		// .then(
 		// 	this.props.history.push('/')
 		// )

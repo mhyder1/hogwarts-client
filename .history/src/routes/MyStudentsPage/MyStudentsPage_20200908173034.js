@@ -20,7 +20,7 @@ export default class MyStudentsPage extends React.Component {
               <p>
                 Student {index + 1} belongs to the {student.house} House. Their
                 pet is an {student.pet}, and their favorite subject is{" "}
-                {student.favoritesubject}.
+                {student.favoriteSubject}.
               </p>
             </section>
           ))}

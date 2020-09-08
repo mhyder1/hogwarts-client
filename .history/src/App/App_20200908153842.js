@@ -15,14 +15,6 @@ class App extends Component {
     students: []
   }
 
-  componentDidMount() {
-    fetch(`http://localhost:8000/students`)
-    .then(res => res.json())
-    .then(students => {
-      this.setState({students})
-    })
-  }
-
   addStudent = (student) => {
     this.setState({
       students: [...this.state.students, student]

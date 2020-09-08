@@ -22,25 +22,21 @@ export default class CreatePageForm extends React.Component {
       wandType,
       wandCore,
       favoriteSubject,
-      house: 'Ravenclaw'
     }
 
     fetch(`http://localhost:8000/students`,
 		{
 			method: 'POST',
 			headers: { 'content-type': 'application/json' },
-			body: JSON.stringify(newStudent)	
+			body: newStudent	
 		})
+		
 		.then(res => {
 			if (!res.ok)
 				return res.json().then(e => Promise.reject(e))
 			return res.json()
 		})
-		.then(student => {
-      this.context.addStudent(student)
-      // this.props.history.push('/my-students')
-      this.props.goTo()
-    })
+		.then(student => this.context.addStudent(student))
 		// .then(
 		// 	this.props.history.push('/')
 		// )
@@ -48,6 +44,8 @@ export default class CreatePageForm extends React.Component {
 			alert(error.message)
 		})
     
+    
+    // call to database
   }
 
   handleChange = (event) => {

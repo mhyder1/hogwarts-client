@@ -16,7 +16,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch(`http://localhost:8000/students`)
+    fetch(`localhost:8000/students`)
     .then(res => res.json())
     .then(students => {
       this.setState({students})
