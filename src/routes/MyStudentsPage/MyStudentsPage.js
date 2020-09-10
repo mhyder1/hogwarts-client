@@ -22,6 +22,7 @@ export default class MyStudentsPage extends React.Component {
                 pet is an {student.pet}, and their favorite subject is{" "}
                 {student.favoritesubject}.
               </p>
+              <button>DELETE</button>
             </section>
           ))}
           {/* <section id="student-one">
