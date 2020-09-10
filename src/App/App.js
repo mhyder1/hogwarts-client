@@ -26,8 +26,14 @@ class App extends Component {
   addStudent = (student) => {
     this.setState({
       students: [...this.state.students, student]
-    })
-  }
+    });
+  };
+
+  removeStudent = (student) => {
+    this.setState({
+      students: this.state.students.filter((student) => student.id !== studentId),
+    });
+  };
 
   render() {
     const value = {

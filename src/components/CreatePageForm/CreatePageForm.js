@@ -25,6 +25,7 @@ export default class CreatePageForm extends React.Component {
       house: 'Ravenclaw'
     }
 
+
     fetch(`http://localhost:8000/students`,
 		{
 			method: 'POST',
@@ -45,7 +46,7 @@ export default class CreatePageForm extends React.Component {
 		// 	this.props.history.push('/')
 		// )
 		.catch(error => {
-			alert(error.message)
+      console.log(error)
 		})
     
   }
