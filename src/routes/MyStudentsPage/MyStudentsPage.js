@@ -13,7 +13,7 @@ export default class MyStudentsPage extends React.Component {
   
   static contextType = AppContext
 
-  handleClickDelete = (e) => {
+  handleRemoveStudent = (e) => {
     e.preventDefault();
     const studentId = this.props.id;
   
