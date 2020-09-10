@@ -31,7 +31,7 @@ class App extends Component {
 
   removeStudent = (student) => {
     this.setState({
-      students: this.state.students.filter((student) => student.id !== studentId),
+      students: this.state.students.filter((student) => student.id !== student.id),
     });
   };
 
