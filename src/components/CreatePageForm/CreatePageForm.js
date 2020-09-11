@@ -15,6 +15,15 @@ export default class CreatePageForm extends React.Component {
 
   handleSubmit = (event) => {
     event.preventDefault()
+    const hogwartsHouses = [
+      'Gryffindor',
+      'Hufflepuff',
+      'Ravenclaw',
+      'Slytherin'
+  ];
+    const house = hogwartsHouses[
+      Math.floor(Math.random()*hogwartsHouses.length)]
+
     const { pronouns, pet, wandType, wandCore, favoriteSubject } = this.state
     const newStudent = {
       pronouns,
@@ -22,7 +31,7 @@ export default class CreatePageForm extends React.Component {
       wandType,
       wandCore,
       favoriteSubject,
-      house: 'Ravenclaw'
+      house
     }
 
 

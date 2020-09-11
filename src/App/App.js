@@ -29,9 +29,9 @@ class App extends Component {
     });
   };
 
-  removeStudent = (student) => {
+  removeStudent = (studentId) => {
     this.setState({
-      students: this.state.students.filter((student) => student.id !== student.id),
+      students: this.state.students.filter(student => student.id !== studentId),
     });
   };
 

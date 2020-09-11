@@ -1,0 +1,91 @@
+/* body {
+    background: url(images/hogwarts.jpg);
+}
+  
+  
+header {
+    background-color:
+    margin: 0;
+    padding: 10px;
+}
+  
+header h1 {
+    font-family: 'Holtwood One SC';
+    letter-spacing: 2px;
+    font-size: 25px;
+    text-align: center; 
+    padding-top:10px;
+    padding-bottom: 0;
+}
+  
+header nav {
+    display: flex;
+    justify-content: center;
+}
+  
+  
+header nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0px;
+    color: #000;
+}
+  
+header nav ul li {
+    padding: 5px ; 
+}
+  
+header nav ul li a {
+    text-decoration: none;
+    color: #000;
+}
+  
+header nav ul li a:hover {
+   color: rgb(177, 2, 2);
+}
+  
+header nav ul li a:last-child {
+    margin: 0;
+}
+  
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    align-self: center;
+    text-align: center;
+    color: rgb(243, 239, 231);
+    margin: auto;
+    text-shadow:5px 5px 10px black;
+    font-weight: bolder;
+} */
+  /* 
+  @media all and (min-width: 800px) {
+    body {
+      font-size: 20px;
+    }
+    
+    
+    header {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 30px 10px 30px;
+    }
+  
+    header h1{
+      font-size:35px; 
+    }
+  
+    header nav {
+      padding: 25px;
+      text-align: right;
+    }
+  
+    header nav ul li a:hover {
+      color: rgb(177, 2, 2);
+    }
+  } */

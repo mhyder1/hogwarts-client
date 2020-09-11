@@ -13,25 +13,20 @@ export default class MyStudentsPage extends React.Component {
   
   static contextType = AppContext
 
-  handleRemoveStudent = (e) => {
+  handleRemoveStudent = (e, id) => {
     e.preventDefault();
-    const studentId = this.props.id;
+    const studentId = id;
   
-
   fetch(`${config.API_ENDPOINT}/students/${studentId}`, {
     method: "DELETE",
     headers: {
       "content-type": "application/json",
     },
   })
-    .then((res) => {
-      if (!res.ok) return res.json().then((e) => Promise.reject(e));
-      return res.json();
-    })
     .then(() => {
       this.context.removeStudent(studentId);
       // allow parent to perform extra behaviour
-      this.props.onRemoveStudent(studentId);
+      // this.props.onRemoveStudent(studentId);
     })
     .catch((error) => {
       console.error({ error });
@@ -47,14 +42,14 @@ export default class MyStudentsPage extends React.Component {
         <h1 id="my-students-h1">My Students</h1>
         <section id="students">
           {this.context.students.map((student, index) => (
-            <section id="student-one">
+            <section id="student-one" key={index}>
               {/* <p>Student {index + 1}:</p> */}
               <p>
                 Student {index + 1} belongs to the {student.house} House. Their
-                pet is an {student.pet}, and their favorite subject is{" "}
+                pet is {['a','e','i','o','u'].includes(student.pet[0]) ? 'an' : 'a'} {student.pet}, and their favorite subject is{" "}
                 {student.favoritesubject}.
               </p>
-              <button className="remove_student" type="button" onClick={this.handleRemoveStudent}>DELETE</button>
+              <button className="remove_student" type="button" onClick={(e) => this.handleRemoveStudent(e, student.id)}>DELETE</button>
             </section>
           ))}
           {/* <section id="student-one">

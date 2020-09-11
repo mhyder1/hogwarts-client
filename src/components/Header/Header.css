@@ -1,0 +1,9 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px 10px 30px;
+}
+
+.hogwarts-header {
+    font-size:35px; 
+}
