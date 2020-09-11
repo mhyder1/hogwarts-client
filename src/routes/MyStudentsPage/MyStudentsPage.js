@@ -39,6 +39,7 @@ export default class MyStudentsPage extends React.Component {
       <div>
         <Header />
         <NavBar />
+        <section className="my-students">
         <h1 id="my-students-h1">My Students</h1>
         <section id="students">
           {this.context.students.map((student, index) => (
@@ -47,7 +48,7 @@ export default class MyStudentsPage extends React.Component {
               <p>
                 Student {index + 1} belongs to the {student.house} House. Their
                 pet is {['a','e','i','o','u'].includes(student.pet[0]) ? 'an' : 'a'} {student.pet}, and their favorite subject is{" "}
-                {student.favoritesubject}.
+                {student.favoritesubject}. 
               </p>
               <button className="remove_student" type="button" onClick={(e) => this.handleRemoveStudent(e, student.id)}>DELETE</button>
             </section>
@@ -64,6 +65,7 @@ export default class MyStudentsPage extends React.Component {
         <p>Student Three:</p>
         <p>Student Three belongs to the Slytherin House. Their pet is a rat, and their favorite subject is Potions.</p>
       </section> */}
+        </section>
         </section>
       </div>
     )
