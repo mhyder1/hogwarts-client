@@ -1,7 +1,7 @@
 import React from "react"
 import AppContext from "../../contexts/context"
 import "./CreatePageForm.css"
-import config from "./config"
+import config from "../../config"
 
 
 export default class CreatePageForm extends React.Component {

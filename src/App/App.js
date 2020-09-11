@@ -7,7 +7,7 @@ import CreatePage from '../routes/CreatePage/CreatePage.js'
 import MyStudentsPage from '../routes/MyStudentsPage/MyStudentsPage.js'
 import SignUpPage from '../routes/SignUpPage/SignUpPage.js'
 import AppContext from '../contexts/context'
-import config from "./config"
+import config from "../config"
 
 
 
