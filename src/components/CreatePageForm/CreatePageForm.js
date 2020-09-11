@@ -1,6 +1,7 @@
 import React from "react"
 import AppContext from "../../contexts/context"
 import "./CreatePageForm.css"
+import config from "./config"
 
 
 export default class CreatePageForm extends React.Component {
@@ -36,7 +37,7 @@ export default class CreatePageForm extends React.Component {
     }
 
 
-    fetch(`http://localhost:8000/students`,
+    fetch(`${config.API_ENDPOINT}/students`,
 		{
 			method: 'POST',
 			headers: { 'content-type': 'application/json' },

@@ -7,6 +7,7 @@ import CreatePage from '../routes/CreatePage/CreatePage.js'
 import MyStudentsPage from '../routes/MyStudentsPage/MyStudentsPage.js'
 import SignUpPage from '../routes/SignUpPage/SignUpPage.js'
 import AppContext from '../contexts/context'
+import config from "./config"
 
 
 
@@ -16,7 +17,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch(`http://localhost:8000/students`)
+    fetch(`${config.API_ENDPOINT}/students`)
     .then(res => res.json())
     .then(students => {
       this.setState({students})
