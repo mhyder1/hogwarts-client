@@ -1,0 +1,12 @@
+.SignUpForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    align-self: center;
+    text-align: center;
+    color: rgb(32, 23, 23);
+    margin: auto;
+    font-weight: bolder; 
+}

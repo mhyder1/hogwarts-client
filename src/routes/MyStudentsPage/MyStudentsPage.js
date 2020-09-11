@@ -40,7 +40,7 @@ export default class MyStudentsPage extends React.Component {
         <Header />
         <NavBar />
         <section className="my-students">
-        <h1 id="my-students-h1">My Students</h1>
+        <h1 className="my-students-h1">My Students</h1>
         <section id="students">
           {this.context.students.map((student, index) => (
             <section id="student-one" key={index}>
