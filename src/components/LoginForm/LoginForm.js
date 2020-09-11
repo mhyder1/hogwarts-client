@@ -36,7 +36,8 @@ export default class LoginForm extends React.Component {
         </div>
         <div className='user_name'>
           <label htmlFor='LoginForm__user_name'>
-            User name
+            Username
+            <br/>
           </label>
           <Input
             required
@@ -47,6 +48,7 @@ export default class LoginForm extends React.Component {
         <div className='password'>
           <label htmlFor='LoginForm__password'>
             Password
+            <br/>
           </label>
           <Input
             required
@@ -55,6 +57,7 @@ export default class LoginForm extends React.Component {
             id='LoginForm__password'>
           </Input>
         </div>
+        <br/>
         <Button type='submit'>
           Login
         </Button>

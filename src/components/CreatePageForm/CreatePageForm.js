@@ -1,5 +1,6 @@
 import React from "react"
 import AppContext from "../../contexts/context"
+import "./CreatePageForm.css"
 
 
 export default class CreatePageForm extends React.Component {
@@ -68,7 +69,7 @@ export default class CreatePageForm extends React.Component {
   render() {
     console.log(this.context)
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form className="create-form" onSubmit={this.handleSubmit}>
         <label>
           Pick your student's preferred pronouns:
           <br />

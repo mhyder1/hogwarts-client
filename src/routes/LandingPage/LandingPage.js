@@ -14,8 +14,10 @@ const LandingPage = (props) => {
     <div>
       <Header />
       <NavBar />
+      <section className="landing">
         <p>Experience the magic of preparing for your first year of Hogwarts School of Witchcraft and Wizardry! Choose your wand, your pet, and get sorted! The journey begins...</p>
-       <button onClick={() => handleStart()}>HERE</button>
+       <button className="here-button" onClick={() => handleStart()}>HERE</button>
+      </section>
     </div>
     )
   }

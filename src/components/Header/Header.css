@@ -1,9 +1,8 @@
-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 30px 10px 30px;
-}
-
 .hogwarts-header {
-    font-size:35px; 
+    font-family: 'Holtwood One SC';
+    letter-spacing: 2px;
+    font-size: 25px;
+    text-align: center; 
+    padding-top:10px;
+    padding-bottom: 0;
 }

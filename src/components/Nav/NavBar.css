@@ -1,0 +1,14 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0px;
+  color: white;
+
+}
+
+.nav-links {
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+}
