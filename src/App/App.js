@@ -48,10 +48,8 @@ class App extends Component {
       <div className='App'>
         <Switch>
         <Route exact path = '/' component = {LandingPage}/>
-        <Route path = '/login' component ={LoginPage}/>
         <Route path = '/create-student' component ={CreatePage}/>
         <Route path = '/my-students' component ={MyStudentsPage}/>
-        <Route path = '/signup' component ={SignUpPage}/>
         </Switch>
       </div>
       </AppContext.Provider>

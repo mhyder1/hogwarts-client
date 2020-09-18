@@ -89,9 +89,9 @@ export default class CreatePageForm extends React.Component {
           <br />
           <select name="pet" onChange={this.handleChange} required>
             <option value="">select</option>
-            <option value="owl">Owl</option>
-            <option value="cat">Cat</option>
-            <option value="toad">Toad</option>
+            <option value="Owl">Owl</option>
+            <option value="Cat">Cat</option>
+            <option value="Toad">Toad</option>
           </select>
         </label>
 

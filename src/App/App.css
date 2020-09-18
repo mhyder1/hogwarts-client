@@ -5,6 +5,7 @@ body {
     background: url('https://images.unsplash.com/photo-1583997052103-b4a1cb974ce5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80');
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
     color: rgb(32, 23, 23);
     padding: 40px;
     font-family: Arial;

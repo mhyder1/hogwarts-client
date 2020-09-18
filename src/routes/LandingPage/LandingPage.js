@@ -7,7 +7,7 @@ import NavBar from '../../components/Nav/NavBar'
 const LandingPage = (props) => {
   const handleStart = () => {
     const {history} = props 
-    history.push('./login')
+    history.push('./create-student')
   }
 
   return (
