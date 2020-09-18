@@ -19,3 +19,10 @@ After creating a student, the student will populate on the My Students Page, alo
 
 My Students Page screenshot:
 https://imgur.com/V7ZcaLc
+
+
+Technology Used:
+
+Front End: JavaScript, React, HTML5, CSS3
+
+Back End: Node.js, Express, PostgresSQL, Mocha & Chai, REST APIs 3
