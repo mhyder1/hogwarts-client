@@ -1,8 +1,8 @@
 import config from './config';
 
 const HogwartsApiService = {
-  addStudent() {
-    return fetch(`${config.API_ENDPOINT}/students`, {
+  addStudent(user_id) {
+    return fetch(`${config.API_ENDPOINT}/students/${user_id}`, {
       headers: {},
     })
       .then(res =>
@@ -34,13 +34,13 @@ const HogwartsApiService = {
       });
   },
   post(
-    studentId,
     pronouns,
     pet,
     wandType,
     wandCore,
     favoriteSubject,
-    house
+    house,
+    user_id
   ) {
     return fetch(`${config.API_ENDPOINT}/students`, {
       method: 'POST',
@@ -54,7 +54,8 @@ const HogwartsApiService = {
         wandtype: wandType,
         wandcore: wandCore,
         favoritesubject: favoriteSubject,
-        house
+        house,
+        user_id
       }),
     })
       .then(res =>

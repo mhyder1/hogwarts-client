@@ -2,6 +2,7 @@ import React from "react"
 import AppContext from "../../contexts/context"
 import "./CreatePageForm.css"
 import config from "../../config"
+import TokenService from '../../services/token-service'
 
 
 export default class CreatePageForm extends React.Component {
@@ -16,6 +17,7 @@ export default class CreatePageForm extends React.Component {
   static contextType = AppContext
 
   handleSubmit = (event) => {
+    const user_id = TokenService.readJwtToken().user_id
     event.preventDefault()
     const hogwartsHouses = [
       'Gryffindor',
@@ -33,7 +35,8 @@ export default class CreatePageForm extends React.Component {
       wandType,
       wandCore,
       favoriteSubject,
-      house
+      house,
+      user_id
     }
 
 
